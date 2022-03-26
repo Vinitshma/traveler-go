@@ -1,0 +1,38 @@
+.logo{
+    display: flex;
+    justify-content: center;
+    padding: 6px 0;
+    padding-bottom: 14px;
+}
+h2{
+    color:#f5eec2 !important;
+    font-size: 17px;
+}
+.mat-icon{
+    vertical-align: center;
+    margin-right: 1rem;
+}
+.contentTop{
+    border-width: 2px;
+    border-color: white;
+    padding-bottom: 4px;
+}
+.content1{
+    border-color:black;
+    padding-bottom: 4px;
+    margin: 0px 6px;
+}
+.mat-list-item{
+    color:black !important;
+    font-size:0.8rem;
+    height: 44px !important;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+.mat-list-item:hover{
+    background: #adb5bd;
+}
+.active{
+    background: #adb5bd !important;
+}
+

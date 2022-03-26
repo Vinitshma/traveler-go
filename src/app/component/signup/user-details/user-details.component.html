@@ -1,0 +1,66 @@
+<!-- <button routerLink="/signup/accountDetails">account details</button> -->
+<div class="bodyMain">
+    <form class="container1" #signr1="ngForm" (ngSubmit)="onSubmit(signr1)">
+        <div class="header1">
+            <h1>USER DETAILS</h1>
+        </div>
+        <div class="main-content">
+            <div class="main-content-item">
+                <mat-form-field >
+                    <mat-label>Full name</mat-label>
+                    <input matInput placeholder="eg.Ran k" required ngModel name="fullName">
+                </mat-form-field>
+            </div>
+            <div class="main-content-item">
+                <mat-form-field >
+                    <mat-label>Your Birthday</mat-label>
+                    <input matInput [matDatepicker]="picker" placeholder="eg.01/01/1990" ngModel name="birthDate">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker color="primary"></mat-datepicker>
+                    </mat-form-field>
+            </div>
+            <div class="main-content-item">
+                <mat-form-field  >
+                    <mat-label>Gender</mat-label>
+                    <mat-select ngModel name="genderDel">
+                        <mat-option  value="option">Male</mat-option>
+                        <mat-option  value="option">Female</mat-option>
+                    </mat-select>
+                    </mat-form-field>
+            </div>
+            <div class="main-content-item2">
+                <table class="full-width" cellspacing="0">
+                    <tr>
+                    <td>
+                        <div class="px-2 col2">
+                        <mat-form-field class="full-width" >
+                            <mat-label >Country</mat-label>
+                            <input matInput placeholder="Ex. India" ngModel name="countryNam">
+                        </mat-form-field>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="px-2 col2">
+                        <mat-form-field class="full-width" >
+                            <mat-label>Phone</mat-label>
+                            <span matPrefix>+91 &nbsp;</span>
+                            <input type="tel" matInput placeholder="984236****" ngModel name="phoneNum">
+                        </mat-form-field>
+                        </div>
+                    </td>
+                    </tr>
+                </table>    
+            </div>
+            <div class="main-content-item3">
+                <span class="p-float-label">
+                    <textarea inputId="textarea" ngModel name="bioDesc" rows="3" width="100%" style="resize: none;" cols="30" [(ngModel)]="value10" pInputTextarea></textarea>
+                    <label for="textarea">Bio</label>
+                </span>
+            </div>
+            <div>
+                <!-- routerLink="/signup/accountDetails" -->
+                <button pButton pRipple type="submit" label="Submit" class="sbmtbtn p-button-rounded"></button>
+            </div>
+        </div>
+    </form>
+</div>

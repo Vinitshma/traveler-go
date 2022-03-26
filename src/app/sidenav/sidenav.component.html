@@ -1,0 +1,36 @@
+<mat-nav-list>
+    <div class="logo px-4">
+        <img [src]="logo" width="135px" alt="">
+    </div>
+    <mat-divider class="contentTop"></mat-divider>
+    <h2 matSubheader class="mt-2">Application</h2>
+
+    <a mat-list-item routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon>home</mat-icon> HOME
+    </a>
+
+    <mat-divider class="content1"></mat-divider>
+
+    <a mat-list-item routerLink="/dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon>dashboard</mat-icon> DASHBOARD
+    </a>
+
+    <mat-divider class="content1"></mat-divider>
+
+    <a mat-list-item routerLink="/bookings" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon>description</mat-icon> BOOKINGS
+    </a>
+
+    <mat-divider class="content1"></mat-divider>
+
+    <a mat-list-item routerLink="/reports" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon>report</mat-icon> REPORTS
+    </a>
+
+    <mat-divider class="content1"></mat-divider>
+
+    <a mat-list-item routerLink="/logout" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon>logout</mat-icon> LOGOUT
+    </a>
+    
+</mat-nav-list>

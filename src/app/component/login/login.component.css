@@ -1,0 +1,62 @@
+
+.mat-dialog-content{
+    padding: 80px;
+    padding-left: 200px;
+    justify-content: center;
+}
+.LoginContainer{
+    width: 721px;
+    background: #fff;
+    box-shadow: 0 0 4px #c2c2c2;
+    border-radius: 5px;
+} 
+.row{
+    width: 100%;
+}
+.col1{
+    width: 30%;
+    background-color: cadetblue;
+    border-radius: 5px;
+}
+.col2{
+    padding: 20px;
+    width: 70%;
+}
+h2{
+    font-family: unset;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    text-decoration-color:#fd7e14;
+}
+.quote{
+    padding-bottom: 28px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.emailInput {
+    width: 100%;
+}
+.pswdInput{
+    width: 100%;
+}
+.sbmt{
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+}
+.sbmtbtn{
+    width: 210px;
+    background:#D9EEF7;
+    color:#1976A1;
+}
+strong{
+    cursor: pointer;
+}
+.ctntend{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+} 

@@ -1,0 +1,41 @@
+<div class="mainContainer">
+    <div class="col-6 LoginContainer">
+        <div class="row">
+            <div class="col1"></div>
+            <div class="col2">
+                <form #local="ngForm" (ngSubmit)="onSubmission(local)">
+                    <h2 class="headerName">LogIn</h2>
+                    <div class="quote">
+                        <h4 class="text-muted">Welcome back! Please login to your account.</h4>
+                    </div>
+                    <div class="mb-3">
+                        <mat-form-field class="emailInput" appearance="standard">
+                            <mat-label>Username</mat-label>
+                            <input matInput required ngModel name="email">
+                            <mat-error *ngIf="email.invalid">{{getErrorMessage1()}}</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="mb-3 ">
+                        <mat-form-field class="pswdInput" appearance="standard">
+                            <mat-label>Password</mat-label>
+                            <input matInput ngModel name="password"  required [type]="hide ? 'password' : 'text'">
+                            <mat-error *ngIf="password.invalid">{{getErrorMessage2()}}</mat-error>
+                            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button>
+                        </mat-form-field> 
+                    </div>
+                    <div class="mb-3">
+                        <mat-checkbox >Remember me</mat-checkbox>
+                    </div> 
+                    <div class="sbmt">
+                        <button pButton pRipple type="submit" label="Submit" class="sbmtbtn p-button-rounded p-button-raised"></button>
+                    </div>
+                    <div class="ctntend">Not Registered yet?
+                        <strong class="text-primary px-1" routerLink="/registration1">Create a new Account.</strong>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

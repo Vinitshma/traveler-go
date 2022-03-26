@@ -1,0 +1,26 @@
+/* #39395f #73a24e #a9c25d #f5eec2 #416a59 */
+mat-toolbar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background:#e27d60;
+}
+h1{
+    font-size: 1.7rem;
+}
+ul li {
+    list-style: none;
+}
+mat-button{
+    background: #dee2e6;
+}
+.matInput{
+    width: 200px;
+}
+.mat-form-field{
+    width: 28rem;
+}
+button.mat-menu-item {
+    width: 135px;
+}
+

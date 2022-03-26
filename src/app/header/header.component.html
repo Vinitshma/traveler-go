@@ -1,0 +1,32 @@
+<mat-toolbar>
+    <mat-toolbar-row class="shadow justify-content-between">
+        <h1>Travel Go</h1>
+
+         <div class="row mr-2 ml-auto">
+            <ul class="ms-auto d-flex">
+                <li>
+                    <button mat-button routerLink="/wishlist" class="mt-2">
+                        <mat-icon>favorite</mat-icon>
+                    </button>
+                </li>
+                <li>
+                    <button mat-button [matMenuTriggerFor]="menu" class="mt-2 align-items-center">
+                        <mat-icon>account_circle</mat-icon>
+                        <mat-icon class="ml-1">keyboard_arrow_down</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button routerLink="/login" mat-menu-item>
+                            <mat-icon>login</mat-icon>
+                            LogIn
+                        </button>
+                        <mat-divider><hr></mat-divider>
+                        <button routerLink="/signup" mat-menu-item>
+                            <mat-icon>app_registration</mat-icon>
+                            SignUp
+                        </button>
+                    </mat-menu>
+                </li>
+            </ul>
+        </div> 
+    </mat-toolbar-row>
+</mat-toolbar>
