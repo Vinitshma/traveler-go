@@ -10,7 +10,6 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './component/login/login.component';
 import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
-import { PaymentComponent } from './component/payment/payment.component';
 import { BookingsComponent } from './bookings/bookings.component';
 import { ReportsComponent } from './reports/reports.component';
 import { LogoutComponent } from './component/logout/logout.component';
@@ -49,7 +48,6 @@ import { DeleteComponent } from './bookings/delete/delete.component';
     DashboardComponent,
     LoginComponent,
     PageNotFoundComponent,
-    PaymentComponent,
     BookingsComponent,
     ReportsComponent,
     LogoutComponent,

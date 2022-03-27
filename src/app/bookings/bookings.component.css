@@ -1,18 +1,6 @@
-.page{
-    color: white;
-    padding: 0 1rem;
-}
-.page-content{
-    min-height: calc(110vh - 170px);
-    border-radius: 10px;
-    background: white;
-    margin-top: 0.7rem;
-    color: black;
-    font-size: 2.4rem;
-}
 .page-content-data{
     padding: 8px;
     border: 1px solid grey;
     top: 33%;
     left: 25%;
-}
+} 

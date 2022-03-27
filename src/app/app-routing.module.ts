@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BookingsComponent } from './bookings/bookings.component';
 import { DeleteComponent } from './bookings/delete/delete.component';
@@ -23,20 +23,27 @@ const routes: Routes = [
   {path: 'login',component:LoginComponent},
   // canActivateChild
   {
-    path: 'bookings',
+    path:'bookings',
     canActivate:[BookheadGuard],
-    children:[{path:'bookings',component:BookingsComponent},
-    {path:'bookings',
-      canActivateChild:[BookcustomGuard],
-      children:[
-        {path: 'edit', component:EditComponent},
-        {path: 'manage', component:ManageComponent},
-        {path: 'delete', component:DeleteComponent},]}
-  ]},
-  
+    children:[
+      {
+        path:'',
+        component:BookingsComponent
+      },
+      {
+        path:'',
+        canActivateChild:[BookcustomGuard],
+        children:[
+          {path:'manage', component:ManageComponent},
+          {path:'edit', component:EditComponent},
+          {path:'delete', component:DeleteComponent},
+        ]
+      }]
+  },
+
   {path: 'reports', component:ReportsComponent},
   {path: 'logout', component:LogoutComponent},
-  // canActivate
+  // canActivate 
   {
     path: 'wishlist', 
     component:WishlistItemsComponent,
