@@ -13,6 +13,7 @@ export class UserDetailsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
   // formSubmition
   submitionDetails:any=[];
   onSubmit(formObject:NgForm){

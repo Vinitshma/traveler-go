@@ -1,5 +1,5 @@
 <div class="mainContainer">
-    <div class="col-6 LoginContainer">
+    <div class="col-6 form-container shadow">
         <div class="row">
             <div class="col1"></div>
             <div class="col2">
@@ -25,14 +25,8 @@
                             </button>
                         </mat-form-field> 
                     </div>
-                    <div class="mb-3">
-                        <mat-checkbox >Remember me</mat-checkbox>
-                    </div> 
                     <div class="sbmt">
-                        <button pButton pRipple type="submit" label="Submit" class="sbmtbtn p-button-rounded p-button-raised"></button>
-                    </div>
-                    <div class="ctntend">Not Registered yet?
-                        <strong class="text-primary px-1" routerLink="/registration1">Create a new Account.</strong>
+                        <button pButton pRipple type="submit" label="Submit" class="sbmtbtn p-button-rounded p-button-raised" [disabled]="!local.valid"></button>
                     </div>
                 </form>
             </div>

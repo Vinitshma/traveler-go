@@ -1,15 +1,16 @@
 
-.mat-dialog-content{
-    padding: 80px;
-    padding-left: 200px;
+.mainContainer{
+    display: flex;
+    height: 90vh;
     justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
 }
-.LoginContainer{
-    width: 721px;
+.form-container{
+    width: 612px;
     background: #fff;
-    box-shadow: 0 0 4px #c2c2c2;
-    border-radius: 5px;
-} 
+}
 .row{
     width: 100%;
 }

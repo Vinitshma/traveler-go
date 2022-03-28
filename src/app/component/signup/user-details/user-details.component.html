@@ -57,9 +57,8 @@
                     <label for="textarea">Bio</label>
                 </span>
             </div>
-            <div>
-                <!-- routerLink="/signup/accountDetails" -->
-                <button pButton pRipple type="submit" label="Submit" class="sbmtbtn p-button-rounded"></button>
+            <div class="ms-auto px-1 py-2">
+                <button class="btn btn-primary" routerLink="/signup/accountDetails" [disabled]="!signr1.valid">Submit</button>
             </div>
         </div>
     </form>
