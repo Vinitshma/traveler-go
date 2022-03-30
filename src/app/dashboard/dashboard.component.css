@@ -1,0 +1,53 @@
+.top-banner{
+    height: 140px !important;
+    padding-bottom: 200px;
+}
+.top-blank{
+    height: 60px;
+}
+.top-qoute{
+    color: #2C3539;
+    display: flex;
+    padding-left: 200px;
+}
+a {
+    text-decoration: none !important;
+    text-decoration-color: none;
+    text-decoration: none;
+    color: black;
+}
+.display-5{
+    font-weight: 500;
+    font-family: sans;
+    padding-right: 10px;
+    text-align: end;
+    direction: ltr;
+    justify-content: center;
+    align-self: center;
+    color: #b02056;
+}
+.leftContant{
+    border-left: 2px solid #2C3539;
+    padding-left: 10px;
+}
+.find-field2{
+    padding-bottom:18px;
+    padding-left: 3px;
+}
+.style3{
+    border-radius: 20px 40px;
+    background: #3f5268;
+    color: #F4F2F1;
+}
+.secondDiv{
+    background: #F4F2F1;
+    padding: auto;
+}
+.formControl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.find-field{
+    padding-right: 4px;
+}

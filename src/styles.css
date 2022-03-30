@@ -3,3 +3,13 @@
 html,body{
     height: 100% ;
 }
+.mat-form-field-infix{
+    display: block;
+    position: relative;
+    flex: auto;
+    min-width: 0;
+    width: 216px !important;
+}
+.mat-form-field-type-mat-date-range-input .mat-form-field-infix {
+    width: 165px !important;
+}

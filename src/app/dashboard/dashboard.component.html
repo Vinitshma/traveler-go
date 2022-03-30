@@ -1,1 +1,45 @@
-<p>dashboard work!</p>
+<div class="main-div">
+    <!-- banner type -->
+    <div class="top-banner">
+        <div class="top-blank"></div>
+        <div class="top-qoute">
+            <div class="display-5">Traveler</div>
+            <div class="leftContant">
+                <h3>Deals from your favorite booking sites</h3>
+                <p class="text-muted">Try searching for a city, a specific hotel, or even a landmark!</p>
+                <p class="text-muted">We compare multiple booking sites at once.</p>
+            </div>
+        </div>
+    </div>
+    <!-- search bar -->
+    <div class="secondDiv">
+        <div class="find-type">
+            <button class="btn style2" >All stays</button>
+            <button class="btn style2">Hotel</button>
+            <button class="btn style2">House / Appartment</button>
+        </div>
+        <div class="find-form">
+            <form class="formControl" [formGroup]="addDetailsForm" (ngSubmit)="searchData()">
+                <div class="find-field">
+                    <mat-form-field appearance="outline" class="full-width">
+                        <mat-icon matPrefix>search</mat-icon>
+                        <input matInput type="search" placeholder="Search" formControlName="search">
+                    </mat-form-field>
+                </div>
+                <div class="find-field">
+                    <mat-form-field appearance="outline">
+                        <mat-date-range-input [rangePicker]="picker">
+                          <input matStartDate placeholder="Start date" formControlName="select1">
+                          <input matEndDate placeholder="End date" formControlName="select2">
+                        </mat-date-range-input>
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-date-range-picker #picker></mat-date-range-picker>
+                      </mat-form-field>
+                </div>
+                <div class="find-field2">
+                    <button type="search" class="btn style3">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
