@@ -22,7 +22,7 @@
             <form class="formControl" [formGroup]="addDetailsForm" (ngSubmit)="searchData()">
                 <div class="find-field">
                     <mat-form-field appearance="outline" class="full-width">
-                        <mat-icon matPrefix>search</mat-icon>
+                        <mat-icon [ngStyle]="{'color':'cadetblue'}" matPrefix>place</mat-icon>
                         <input matInput type="search" placeholder="Search" formControlName="search">
                     </mat-form-field>
                 </div>
@@ -42,4 +42,13 @@
             </form>
         </div>
     </div>
+    <mat-grid-list cols="4" rowHeight="2:2">
+        <mat-grid-tile
+            *ngFor="let tile of tiles"
+            [colspan]="tile.cols"
+            [rowspan]="tile.rows"
+            [style.background]="tile.color">
+            
+        </mat-grid-tile>
+    </mat-grid-list>
 </div>

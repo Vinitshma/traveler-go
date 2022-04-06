@@ -30,6 +30,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import {MatGridListModule} from '@angular/material/grid-list';
 // prime
 import {InputTextModule} from 'primeng/inputtext';
 import {ButtonModule} from 'primeng/button';
@@ -38,7 +39,7 @@ import { WishlistItemsComponent } from './component/wishlist-items/wishlist-item
 import { EditComponent } from './bookings/edit/edit.component';
 import { ManageComponent } from './bookings/manage/manage.component';
 import { DeleteComponent } from './bookings/delete/delete.component';
-
+import {BreadcrumbModule} from 'primeng/breadcrumb';
 
 @NgModule({
   declarations: [
@@ -78,7 +79,9 @@ import { DeleteComponent } from './bookings/delete/delete.component';
     HttpClientModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BreadcrumbModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
